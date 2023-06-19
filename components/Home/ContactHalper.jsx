@@ -1,16 +1,17 @@
 import React from "react";
 import { Box, HStack, Image, Text, VStack, Column } from "native-base";
-import { Row } from "antd";
+import { Card, Row } from "antd";
 
 const ContactHelper = () => {
   return (
     <Row
       justify={"space-between"}
-      id="contact-helper"
       style={{
-        paddingLeft: 150,
-        paddingRight: 150,
-        marginTop: 200,
+        paddingLeft: 200,
+        paddingRight: 200,
+        paddingTop: 100,
+        // marginTop: 100,
+        marginBottom: 500,
       }}
     >
       <Image
@@ -18,14 +19,16 @@ const ContactHelper = () => {
         alt={"contact"}
         size={500}
       />
-      <Box
-        borderRadius={20}
-        bg={"white"}
-        w={400}
-        my={220}
-        shadow={"5"}
-        px={10}
-        py={5}
+
+      <Card
+        style={{
+          width: 400,
+          height: 150,
+          padding: 10,
+          marginTop: 100,
+          boxShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)",
+        }}
+        id="contact-helper"
       >
         <Text
           fontSize={24}
@@ -43,7 +46,7 @@ const ContactHelper = () => {
             Email:Kunai@Kunai.com
           </Text>
         </Column>
-      </Box>
+      </Card>
     </Row>
   );
 };

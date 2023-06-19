@@ -53,7 +53,6 @@ export default function App() {
             />
           ))}
         </Row>
-        <ContactHelper />
         <Footer />
       </VStack>
     </VStack>

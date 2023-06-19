@@ -11,6 +11,7 @@ const ContentHome = ({ description, title, img }) => {
         paddingLeft: 150,
         paddingRight: 100,
         marginTop: 140,
+        marginBottom: 40,
       }}
     >
       <Column justifyContent={"center"} w={350}>
